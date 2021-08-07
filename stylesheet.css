@@ -1,0 +1,288 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #eeeeee;
+	font-family: 'Lato', sans-serif;
+}
+
+.navbar-brand{
+font-family: 'Style Script', cursive;
+font-size: 40px;
+color: black;
+font-weight: bolder;
+text-shadow: 1px 1.5px rgba(0,0,0,0.2);
+}
+
+.fab{
+	font-size: 40px;
+}
+
+.container-fluid{
+	padding-top: 2em;
+}
+
+#navbar{
+	display: flex;
+	justify-content: space-between;
+	position: static;
+	top: 0px;
+	flex-wrap: wrap;
+}
+
+.navb{
+	color: black;
+	font-size: 17.5px;
+	font-weight: 400;
+	margin: 0 4em;
+}
+
+.navb:hover,.navbar-brand:hover{
+color: rgba(0,0,0,0.95);
+text-decoration: none;
+}
+
+#head{
+	text-align: center;
+}
+
+#head > h1 {
+font-size: 1.5em;
+font-weight: bold;
+padding-bottom: .3em;
+}
+
+#signUp > button {
+	background:#e8cc4e;
+	padding:0.1em 0.5em;
+	font-size: 1.2em;
+	font-weight: 900;
+	border: none;
+	outline: none;
+}
+/*#signUp > button:hover{
+	background: #e8a41d;
+}*/
+
+.animate:hover{
+animation-name: animate;
+animation-duration: 3s;
+animation-fill-mode: both;
+}
+
+@keyframes animate{
+	from {background:#e8cc4e;}
+	to {background:#e8a41d;}
+}
+
+input[type="email"]{
+	width: 300px;
+	outline: none;
+}
+
+#body{
+	margin-top: 5em;
+}
+.services{
+	display: flex;
+	 margin: auto;
+	 padding-bottom:2.5em;
+	 max-width: 80%;
+}
+
+.con{
+	
+	margin-left: 3em;
+}
+
+.icon{
+	
+	
+}
+
+.fas{
+	width: 50px;
+	height: auto;
+	font-size: 45px;
+	vertical-align: center;
+	color: #fe8b00;
+}
+.con > h2{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+iframe{
+	margin: 4em auto;
+	border: none;
+}
+#myFrame{
+	display: flex;
+	justify-content: center;
+}
+
+.products{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-bottom: 2em;
+}
+
+.product-card{
+	border: 1px solid black;
+	text-align: center;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+	margin-right: 1em;
+	width: 28%;
+}
+
+.product-card > h3{
+	background: #e1e1e1;
+	padding: 1em;
+	margin-bottom: 1.2em;
+	font-size: 1em;
+	font-weight: bold; 
+}
+
+.product-desc{
+margin-bottom: 1.5em;
+}
+
+.product-card > button {
+	background: #e8cc4e;
+	padding:0.1em 0.5em;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+}
+
+.price{
+	font-size: 30px;
+	padding: 0 1em;
+	font-weight: bolder;
+
+}
+
+footer{
+	background: #e1e1e1;
+     max-width: 60%;
+     margin: auto;
+    
+	margin-bottom: 0px;
+	padding: 0.2em;
+}
+ footer > div{
+ 	display: flex;
+ 	justify-content: flex-end;
+ }
+ .footer-nav > a{
+ 	color: black;
+ }
+
+ .footer-nav > a:hover{
+ 	text-decoration: none;
+ }
+ footer > p{
+ text-align: right;
+ color: #8e8e8e;
+ }
+
+@media (max-width: 1024px){
+	.navbar-brand,.fab{
+		font-size: 30px;
+	}
+	.navb{
+		margin: 0 2.5em;
+	}
+}
+
+@media (max-width: 760px){
+	.navb{
+     display: flex;
+     flex-wrap: wrap;
+	}
+.products{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.product-card{
+	width: 100%;
+}
+footer{
+	min-width: 100vw;
+}
+}
+
+@media (max-width: 520px){
+  #navbar{
+  	display: block;
+  	margin: auto;
+  	text-align: center;
+  }	
+
+  .navb{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  }
+  .nav-opt{
+  	margin-bottom: 2em;
+  }
+  .navbar-brand,.fab{
+  	font-size: 40px;
+  }
+  .fas{
+  	display: none;
+  	visibility: hidden;
+  }
+  .services{
+  	display: block;
+  	min-width: 100%;
+ 
+  }
+  .con > p{
+  	text-align: left;
+  	font-size: 18px;
+  }
+  .con > h2{
+  	text-indent: 1.5em;
+  }
+  #body{
+  	padding: 0px;
+  	margin-right: 0px;
+  	margin-left: 0px;
+  }
+  footer{
+  	min-width: 100%;
+  }
+  footer >div{
+  	justify-content: center;
+  }
+  footer> p{
+  	text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
